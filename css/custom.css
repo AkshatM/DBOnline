@@ -1,0 +1,20 @@
+body {
+  background-image: url('http://pxwallpaper.com/wp-content/uploads/2014/01/Strawberry_Wallpaper_by_Marsapan.jpg');
+}
+
+h1 {
+  font-family: helvetica;
+  text-align: center;
+  padding-top: 20px;
+}
+
+p {
+  padding: 20px 30px 20px 30px;
+}
+
+.center {
+  margin: 0 auto;
+  width: 60%;
+  background: white;
+  
+}
