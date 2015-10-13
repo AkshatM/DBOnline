@@ -1,17 +1,38 @@
 body {
-  background-image: url('http://pxwallpaper.com/wp-content/uploads/2014/01/Strawberry_Wallpaper_by_Marsapan.jpg');
+  font-family: "Times";
 }
 
 h1 {
-  font-family: Helvetica;
+  color: black;
+  font-family: 'Special Elite', serif;
   text-align: center;
-  padding-top: 20px;
 }
 
 p {
-  padding: 20px 30px 20px 30px;
+  text-align: left;
+  text-justify: auto;
+  font-family: 'Special Elite', Times;
 }
 
-.center {
-  background: white;
+p::first-letter {
+  font-size: 200%;
+  color: black;
+}
+
+.row {
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+
+blockquote {
+  font-family: 'Special Elite', serif;
+  text-align: center;
+  border-right: none;
+  border-left: none;
+}
+
+.aligned-images{
+  max-width: 100%;
+  min-height: 12em;
+  border-radius: 50%;
 }
