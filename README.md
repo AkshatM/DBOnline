@@ -8,3 +8,15 @@ Daily Bruin online training.
 - Build a responsive website using Foundation!
 
 The website project itself is hosted on Github Pages. Check it out!
+
+# Credits
+
+Desiree Lennart:
+- Came up with the original newspaper theme
+- Added the nav bar and the Open Condensed Elite font
+- Styling
+
+Akshat Mahajan:
+- Extended newspaper theme
+- Added the Special Elite font
+- Content
