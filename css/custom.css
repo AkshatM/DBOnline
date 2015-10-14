@@ -2,6 +2,28 @@ body {
   font-family: "Times";
 }
 
+.caption-image {
+  padding-bottom: 1em;
+}
+
+li a{
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+li a:hover{
+  color: #00BFFF;
+}
+
+ul{
+  list-style-type: none;
+  padding-top:10px;
+}
+
+.left-off-canvas-menu{
+  background-color:white;
+}
 h1 {
   color: black;
   font-family: 'Special Elite', serif;
@@ -9,19 +31,18 @@ h1 {
 }
 
 p {
-  text-align: left;
-  text-justify: auto;
+  padding-left:10px;
+  padding-right:10px;
   font-family: 'Special Elite', Times;
+  line-height: 2em;
+  text-align: justify;
 }
 
-p::first-letter {
+p:first-letter {
   font-size: 200%;
   color: black;
-}
-
-.row {
-  border-right: 1px solid black;
-  border-left: 1px solid black;
+  position: relative;
+  vertical-align: middle;
 }
 
 blockquote {
@@ -32,7 +53,18 @@ blockquote {
 }
 
 .aligned-images{
-  max-width: 100%;
+  display:block;
+  margin:auto;
+  max-width: 90%;
   min-height: 12em;
-  border-radius: 50%;
+  border-radius: 100%;
+}
+
+#caption {
+  font-family: 'Open Sans Condensed','Special Elite', serif; 
+}
+
+hr {
+  padding-top:1em;
+  padding-bottom: 1em;
 }
