@@ -15,6 +15,7 @@ $(document).ready(function() {
 
         // parse the data into the format we want
         var returndata = {
+            url: data["posts"][0]["url"],
             title: data["posts"][0]["title"],
             author: data["posts"][0]["author"]
         };
