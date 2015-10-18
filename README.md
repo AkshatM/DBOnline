@@ -20,7 +20,3 @@ Akshat Mahajan:
 - Extended newspaper theme
 - Added the Special Elite font
 - Content
-<<<<<<< HEAD
-
-=======
->>>>>>> a6c3a95023807062724ca501ee424b87d0f41ff1
