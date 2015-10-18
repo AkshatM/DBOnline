@@ -1,0 +1,46 @@
+{
+    "thread": [
+
+        {
+            "author": "sandeep1",
+            "mark": 35,
+            "title": "Geography"
+        },
+
+        {
+            "author": "sangeeta",
+            "mark": 135,
+            "title": "English"
+        },
+
+        {
+            "author": "surabhi",
+            "mark": 315,
+            "title": "History"
+        },
+
+        {
+            "author": "sumanta",
+            "mark": 305,
+            "title": "Mathematics"
+        },
+
+        {
+            "author": "Ram",
+            "mark": 352,
+            "title": "History"
+        },
+
+        {
+            "author": "John",
+            "mark": 350,
+            "title": "Geography"
+        },
+
+        {
+            "author": "Jack",
+            "mark": 355,
+            "title": "English"
+        }
+    ]
+}
