@@ -1,23 +1,34 @@
 var source = $("#entry-template").html();
 var template = Handlebars.compile(source);
-var jsonsite = "https://webhose.io/search?token=e0defa61-1d57-4397-8b4a-1c51cd60856e&format=json&q=Westwood%20(Westwood%20OR%20UCLA%20OR%20Los%20Angeles)%20thread.section_title%3A(News)&site_type=news";
+var newsfeed = "http://crossorigin.me/http://dailybruin.com/feed";
 
-
+var cleanCDATA = function (string) {
+    // use it to get rid of CDATA enclosed strings.
+    // An example of use is with author in returndata variable below
+    // commented out because it's too damn unreliable.
+    return string.slice(9,-3)
+}
 
 $(document).ready(function() {
 
-    $.get(jsonsite, 
-          function(data) { // a callback when the GET request is successful
+    $.get(newsfeed, 
+          function(response) { // a callback when the GET request is successful
         
         // get source template
         var templateSource = $("#entry-template").html();
         template = Handlebars.compile(templateSource);
 
         // parse the data into the format we want
+        var data = $(response).find("item")[0]
+        
         var returndata = {
-            url: data["posts"][0]["url"],
-            title: data["posts"][0]["title"],
-            author: data["posts"][0]["author"]
+            
+            url: $(data).find("link").text(),
+            
+            title: $(data).find("title").text(),
+            
+            //author: $(cleanCDATA(data.getElementsByTagName("description")[0].innerHTML)).attr("alt")
+            
         };
         
         // update the page with the formatted data
