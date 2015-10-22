@@ -12,13 +12,16 @@ $(document).ready(function() {
             var json = XMLMapping.load(serialized_XML);
             
             console.log(json); // for your benefit! You can see what the object looks like in the console.
-
+    
             // get source template
             var templateSource = $("#entry-template").html();
             template = Handlebars.compile(templateSource);
 
-            // parse the data into the format we want
-            var data = json["rss"]["channel"]["item"][0];
+
+            //parse the data into the format we want
+            var data = json["rss"]["channel"]["item"];
+
+            console.log(data);
 
             var returndata = {
 
@@ -28,11 +31,15 @@ $(document).ready(function() {
                 
                 author: data["dc$creator"]["$cd"],
                 
-                content: data["description"]["$cd"]
+                content: data["description"]["$cd"],
+
+                data: data
+
 
             };
 
-            // update the page with the formatted data
+            //update the page with the formatted data
+            // var newsHTML = template(returndata);
             var newsHTML = template(returndata);
             $("#news").html(newsHTML);
 

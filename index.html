@@ -93,13 +93,15 @@
         $(document).foundation();
     </script>
     <script id="entry-template" type="text/x-handlebars-template">
+    {{#each data}}
         <blockquote>
-            <a href="{{url}}"> 
-                {{title}} 
+            <a href="{{link.$t}}"> 
+                {{title.$t}} 
             </a>
-            <cite>{{author}}</cite>
+            <cite>{{author.$cd}}</cite>
         </blockquote>
-        <div class="article">{{{content}}}</div>
+        <div class="article">{{{content.$cd}}}</div>
+    {{/each}}
     </script>
     <script src="js/custom2.js"></script>
 
