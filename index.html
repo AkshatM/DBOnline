@@ -98,9 +98,10 @@
             <a href="{{link.$t}}"> 
                 {{title.$t}} 
             </a>
-            <cite>{{author.$cd}}</cite>
+            <cite>{{dc$creator.$cd}}</cite>
         </blockquote>
-        <div class="article">{{{content.$cd}}}</div>
+        {{{clean description.$cd}}}
+        <hr>
     {{/each}}
     </script>
     <script src="js/custom2.js"></script>

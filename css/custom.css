@@ -74,8 +74,12 @@ hr {
     text-align: center;
 }
 
-#article > img {
+.article {
     display: block !important;
     margin-left: auto !important;
     margin-right: auto !important;
+}
+
+p.article {
+    font-family: Helvetica,serif !important;
 }
