@@ -25,7 +25,11 @@ Handlebars.registerHelper('clean', function(content){
     
     // remove all styling from images, and replace them with our own
     
-    // implement elsewhere
+    $(cleanedContent).children("img").each(function() {
+        $(this).removeAttr("class");
+        $(this).removeAttr("style");
+        $(this).attr("class","article_image");
+    });
     
     // Return as HTML
     
